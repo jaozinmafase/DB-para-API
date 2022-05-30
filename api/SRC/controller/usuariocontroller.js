@@ -9,7 +9,7 @@ server.post( '/usuario/login', async (req, resp) => {
         const resposta = await login(email, senha);
         
         resp.send({
-            msg: resposta]
+            msg: resposta
         })
     }catch(err){
         resp.status(404).send({
